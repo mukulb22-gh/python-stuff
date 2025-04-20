@@ -1,0 +1,25 @@
+# 1. Simple class creation and getter setter method
+
+`class` keyword use to create a class in python language. 
+
+`def` keyword use to create a function/method in python language. 
+
+`__init__` is special method called constructor method in python.
+
+By default every function of a class contain first argument as `self`.
+
+Below is the syntax of class and method creation in python.
+
+
+    class ClassName:
+
+        def __init__(self):
+            pass
+
+        def method_call(self):
+            print("Calling from method_call method")
+
+
+### Filename : cls.py
+----
+
