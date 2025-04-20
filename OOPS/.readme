@@ -63,3 +63,34 @@ Syntax of `mutliple inheritence parent and child` class in python language.
 
 ---
 
+# 3. Multilevel Inheritence in python language.
+#### Filename : multilevel_inheritence.py
+
+Suppose class `A` is the parent of class `B` and class `B` is the parent of class `C`.
+
+So when class `C` inherit from `B` it also inherit from `A` class.
+
+For example :- GrandParents -> Parents -> Child
+
+    Challenge Time:-
+
+    If commenting  these lines of code
+
+    #cityObj.setCountry("Bharat")
+    #cityObj.setState("Punjab")
+    #cityObj.setCity("Chandigarh")
+    #super().__init__()   Line no: 15, 27
+
+    What will be the output and Why?
+
+
+Output :- Throwing error  
+
+    print("The country is: ", self.country)
+    AttributeError: 'City' object has no attribute 'country' 
+
+ Reason:-
+ 
+    When cityObj = City() is executed, only City.__init__ runs completely. It doesn't trigger State.__init__, which in turn doesn't trigger Country.__init__. Therefore, the line self.country = "India" inside Country.__init__ is never executed for the cityObj
+
+    The Error Call: When you later call cityObj.getCountry(), this method (inherited from Country) tries to access self.country. Since self.country was never assigned to the cityObj during initialization, Python raises the AttributeError.
