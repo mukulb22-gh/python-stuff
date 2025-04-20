@@ -94,3 +94,18 @@ Output :- Throwing error
     When cityObj = City() is executed, only City.__init__ runs completely. It doesn't trigger State.__init__, which in turn doesn't trigger Country.__init__. Therefore, the line self.country = "India" inside Country.__init__ is never executed for the cityObj
 
     The Error Call: When you later call cityObj.getCountry(), this method (inherited from Country) tries to access self.country. Since self.country was never assigned to the cityObj during initialization, Python raises the AttributeError.
+
+
+# 4. Encapsulation in python language.
+#### Filename : encapsulation.py
+
+    Encapsulation is one of the fundamental principles of Object-Oriented Programming (OOP). It refers to:
+
+    Bundling:
+    Combining data (attributes) and the methods (functions) that operate on that data 
+    within a single unit (a class).
+
+    Data Hiding / Information Hiding: 
+    Restricting direct access to some of an object's components 
+    (typically its internal data/attributes). Access to this data is usually controlled through 
+    public methods (like getters and setters or other methods that use the data).
