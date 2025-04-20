@@ -1,4 +1,5 @@
 # 1. Simple class creation and getter setter method
+#### Filename : cls.py
 
 `class` keyword use to create a class in python language. 
 
@@ -20,6 +21,26 @@ Below is the syntax of class and method creation in python.
             print("Calling from method_call method")
 
 
-### Filename : cls.py
 ----
 
+# 2. Inheritence in python language.
+#### Filename : inheritence.py
+One class inherit the properties and behaviours of another class. 
+
+The class which inherit other class called `Child Class` 
+
+And the class that get inherited called `Parent Class` or `Base Class`.
+
+Syntax of `parent and child` class in python language.
+
+    # Parent Class
+    class ParentClassName:
+        {Parent class body}
+
+    # Child Class
+    class ChildClassName(ParentClassName[, ParentClass2, ...] ):
+        {Child class body}
+
+
+
+    
