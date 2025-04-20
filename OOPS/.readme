@@ -20,9 +20,7 @@ Below is the syntax of class and method creation in python.
         def method_call(self):
             print("Calling from method_call method")
 
-
 ----
-
 # 2. Inheritence in python language.
 #### Filename : inheritence.py
 One class inherit the properties and behaviours of another class. 
@@ -38,9 +36,30 @@ Syntax of `parent and child` class in python language.
         {Parent class body}
 
     # Child Class
-    class ChildClassName(ParentClassName[, ParentClass2, ...] ):
+    class ChildClassName(ParentClassName):
         {Child class body}
 
 
+This is also called `Single Inheritence` in python language.
 
-    
+----
+# 3. Multiple Inheritence in python language.
+#### Filename : multiple_inheritence.py
+
+One class inherit the properties and behaviours of multiple classes. 
+
+Syntax of `mutliple inheritence parent and child` class in python language.
+
+    # Parent Class
+    class ParentClass1:
+        {Parent class body}
+
+    class ParentClass2:
+        {Parent class body}
+
+    # Child Class
+    class ChildClassName(ParentClass1[, ParentClass2, ...] ):
+        {Child class body}
+
+---
+
