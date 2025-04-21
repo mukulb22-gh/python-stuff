@@ -45,3 +45,19 @@ p2 = Point(3, 4)
 p3 = p1 + p2  # The __add__ method is called
 
 print(p3)  # Output: (4, 6)
+
+"""
+Method Overloading:-
+"""
+class MethodOverloading:
+   def add(self, a, b):
+      x = a+b
+      return x
+   def add(self, a, b, c):
+      x = a+b+c
+      return x
+
+moObj = MethodOverloading()
+
+print (moObj.add(10,20,30))
+print (moObj.add(10,20))

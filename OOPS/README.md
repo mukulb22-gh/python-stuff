@@ -126,7 +126,11 @@ Output :- Throwing error
 
     Duck Typing:- The principle of duck typing is: "If it walks like a duck and quacks like a duck, then it must be a duck. In programming terms, if an object has the necessary methods and attributes, Python doesn't care about its actual class. It will happily call those methods.
 
-    Operator Overloading:-
+    Operator Overloading:- Python allows you to redefine the behavior of built-in operators like +, -, *, etc., for your own classes. This is another form of polymorphism.
+
+    Method overloading:- is a feature of object-oriented programming where a class can have multiple methods with the same name but different parameters. To overload method, we must change the number of parameters or the type of parameters.
+
+
 
 
 
