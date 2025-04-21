@@ -109,3 +109,23 @@ Output :- Throwing error
     Restricting direct access to some of an object's components 
     (typically its internal data/attributes). Access to this data is usually controlled through 
     public methods (like getters and setters or other methods that use the data).
+
+
+# 5. Polymorphism in python language.
+#### Filename : polymorphism.py
+
+    Polymorphism word come through combine two words `Poly` means `many` and `morphism` means `form`.
+    It allows objects of different classes to respond to the same method call in their own specific way.
+    If parent class method is overridden by child class method with different business logic, the base class method is a polymorphic method.
+
+    Four ways of polymorphism:-
+    1. Duck Typing
+    2. Operator Overloading
+    3. Method Overloading
+    4. Method Overriding
+
+    
+
+
+
+     
