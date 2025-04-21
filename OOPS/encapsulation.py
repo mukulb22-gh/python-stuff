@@ -27,6 +27,12 @@ s2.studentdata()
 # Name: Loki marks: 95
 
 
+"""
+Name mangling:- is the process of changing name of a member with double underscore 
+to the form object._class__variable. If so required, it can still be accessed from 
+outside the class, but the practice should be refrained
+"""
+
 # Name mangling
 print ("Name: {} marks: {}".format(s1._Student__name, s1._Student__marks))
 print ("Name: {} marks: {}".format(s2._Student__name, s2._Student__marks))

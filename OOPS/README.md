@@ -119,12 +119,16 @@ Output :- Throwing error
     If parent class method is overridden by child class method with different business logic, the base class method is a polymorphic method.
 
     Four ways of polymorphism:-
-    1. Duck Typing
+    1. Duck Typing 
     2. Operator Overloading
     3. Method Overloading
     4. Method Overriding
 
-    
+    Duck Typing:- The principle of duck typing is: "If it walks like a duck and quacks like a duck, then it must be a duck. In programming terms, if an object has the necessary methods and attributes, Python doesn't care about its actual class. It will happily call those methods.
+
+    Operator Overloading:-
+
+
 
 
 
