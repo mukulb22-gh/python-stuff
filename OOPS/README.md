@@ -130,6 +130,12 @@ Output :- Throwing error
 
     Method overloading:- is a feature of object-oriented programming where a class can have multiple methods with the same name but different parameters. To overload method, we must change the number of parameters or the type of parameters.
 
+    Method Overriding:- When a subclass redefine the method of superclass. This is called as Method Overriding.
+
+    
+
+
+
 
 
 
