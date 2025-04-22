@@ -132,7 +132,44 @@ Output :- Throwing error
 
     Method Overriding:- When a subclass redefine the method of superclass. This is called as Method Overriding.
 
-    
+
+---
+# 6 Abstraction
+#### Filename : abstraction.py
+
+    Abstraction :- Abstraction in object-oriented programming is about hiding complex implementation details and showing only the essential information to the user.
+
+    An abstract class is a class that:-
+    . Cannot be instantiated directly. You cannot create objects of an abstract class.   
+    . May contain abstract methods. An abstract method is a method declared but without an implementation in the abstract class. 
+    . Subclasses must provide concrete implementations for all abstract methods.   
+
+
+Python's abc (Abstract Base Classes) module provides the necessary tools to define abstract classes and abstract methods. You use the abc.ABC as a metaclass for your abstract class and the @abc.abstractmethod decorator to declare abstract methods
+
+    from abc import ABC, abstractmethod
+
+    class Animal(ABC):
+        @abstractmethod
+        def make_sound(self):
+            pass
+        
+        def how_many_legs(self,legs)
+            return legs
+
+
+    # working class as implement the abstract method 
+    class Dog(Animal):
+        def make_sound(self):
+            print("Woof!")
+
+
+    # Error in class as not implemented abstract method 
+    class Cat(Animal):
+        def how_many_legs(legs):
+            return legs
+
+---
 
 
 

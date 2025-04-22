@@ -4,15 +4,15 @@ Duck typing:-
 """
 class Dog:
     def speak(self):
-        return "Woof!"
+        return "Duck Typing:- Woof!"
 
 class Cat:
     def speak(self):
-        return "Meow!"
+        return "Duck Typing:- Meow!"
 
 class Bird:
     def speak(self):
-        return "Chirp!"
+        return "Duck Typing:- Chirp!"
 
 def animal_sound(animal):
     print(animal.speak())
@@ -21,9 +21,9 @@ dog = Dog()
 cat = Cat()
 bird = Bird()
 
-animal_sound(dog)  # Output: Woof!
-animal_sound(cat)  # Output: Meow!
-animal_sound(bird) # Output: Chirp!
+animal_sound(dog)  # Output: Duck Typing:- Woof!
+animal_sound(cat)  # Output: Duck Typing:- Meow!
+animal_sound(bird) # Output: Duck Typing:- Chirp!
 
 """
 Operator Overloading:-
@@ -44,7 +44,7 @@ p1 = Point(1, 2)
 p2 = Point(3, 4)
 p3 = p1 + p2  # The __add__ method is called
 
-print(p3)  # Output: (4, 6)
+print("Operator Overloading:-", p3)  # Output: (4, 6)
 
 """
 Method Overloading:-
@@ -61,7 +61,7 @@ class MethodOverloadingError:
 
 moeObj = MethodOverloadingError()
 
-print (moeObj.add(10,20,30))
+print ("Method Overloading:- ", moeObj.add(10,20,30))
 #print (moeObj.add(10,20)) # Throw error as python considered only latest definition
 
 class MethodOverloading:
@@ -74,16 +74,16 @@ class MethodOverloading:
         return x
 
 moObj = MethodOverloading()
-print (moObj.add(10,20,30))
+print ("Method Overloading:- ", moObj.add(10,20,30))
+print ("Method Overloading:- ", moObj.add(10,20))
 
 
 """
 Method Overriding:-
 """
-
 class AnyShape:
     def area(self):
-        return "Shape is not defined"
+        return "Method Overriding:- Shape is not defined"
 
 
 class Rectangle(AnyShape):
@@ -106,5 +106,5 @@ class Circle(AnyShape):
 rectObj = Rectangle(10, 20)
 circleObj = Circle(5)
 
-print(rectObj.area())  # Output: 200
-print(circleObj.area())  # Output: 78.5
+print("Method Overriding:- ", rectObj.area())  # Output: 200
+print("Method Overriding:- ", circleObj.area())  # Output: 78.5
