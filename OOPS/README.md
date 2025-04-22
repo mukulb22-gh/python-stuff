@@ -171,9 +171,70 @@ Python's abc (Abstract Base Classes) module provides the necessary tools to defi
 
 ---
 
+#7 Interface
+#### Filename : interface.py
+
+    In languages like Java and Go, there is keyword called interface which is used to define an interface. Python doesn't have it or any similar keyword. It uses abstract base classes (in short ABC module) and @abstractmethod decorator to create interfaces.
+
+    NOTE: In Python, abstract classes are also created using ABC module.
+
+    An abstract class and interface appear similar in Python. The only difference in two is that the abstract class may have some non-abstract methods, while all methods in interface must be abstract, and the implementing class must override all the abstract methods.
+
+    Rules for implementing Python Interfaces
+    We need to consider the following points while creating and implementing interfaces in Python −
+
+    . Methods defined inside an interface must be abstract.
+    . Creating object of an interface is not allowed.
+    . A class implementing an interface needs to define all the methods of that interface.
+    . In case, a class is not implementing all the methods defined inside the interface, the class must be declared abstract.
 
 
+    from abc import ABC, abstractmethod
 
+    class Speaker(ABC):
+        @abstractmethod
+        def speak(self):
+            pass
+
+        @abstractmethod
+        def volume_up(self):
+            pass
+
+        @abstractmethod
+        def volume_down(self):
+            pass
+
+    class DogSpeaker(Speaker):
+        def speak(self):
+            return "Woof!"
+
+        def volume_up(self):
+            return "Dog volume increased."
+
+        def volume_down(self):
+            return "Dog volume decreased."
+
+    class RobotSpeaker(Speaker):
+        def speak(self):
+            return "Beep boop."
+
+        def volume_up(self):
+            return "Robot volume increased electronically."
+
+        def volume_down(self):
+            return "Robot volume decreased electronically."
+
+    # You cannot instantiate Speaker directly:
+    # speaker = Speaker()  # TypeError: Can't instantiate abstract class Speaker with abstract methods speak, volume_up, volume_down
+
+    dog_speaker = DogSpeaker()
+    robot_speaker = RobotSpeaker()
+
+    def announce(speaker):
+        print(speaker.speak())
+
+    announce(dog_speaker)   # Output: Woof!
+    announce(robot_speaker) # Output: Beep boop.
 
 
 
