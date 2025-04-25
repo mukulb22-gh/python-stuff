@@ -21,3 +21,11 @@
     An interface is responsible for creating factory related objects without explicitly specifying the classes. Each generated factory can give the objects as per the factory patterns.
 
     File = abstract_factory.py
+
+
+### o Prototype Design Pattern  
+
+    It refers to creating duplicate object while keeping performance in mind. 
+    Create a clone of current object.
+
+    File = prototype.py
