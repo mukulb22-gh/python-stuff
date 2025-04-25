@@ -29,3 +29,13 @@
     Create a clone of current object.
 
     File = prototype.py
+
+---
+# Structural Design Patterns :-
+
+### o Adapter Design Pattern  
+
+    Adapter design pattern it work as a bridge between two incompatible interfaces.
+    Eg: Same mobile charger can charge the Ctype, Dtype, thinpin , fatpin charger.
+
+    File = adapter.py
