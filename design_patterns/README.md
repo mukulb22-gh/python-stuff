@@ -39,3 +39,10 @@
     Eg: Same mobile charger can charge the Ctype, Dtype, thinpin , fatpin charger.
 
     File = adapter.py
+
+
+### o Composite Design Pattern  
+
+    It is used when we need to treat a group of objects in similar way as a single object.
+
+    File = composite.py
