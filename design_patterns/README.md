@@ -8,3 +8,16 @@
     File = singleton.py
     
  
+### o Factory Design Pattern  
+
+    In factory design pattern we create object without exposing the creation logic and 
+    refer to newly created object using an common interface
+
+    File = factory.py
+
+
+### o Abstract Factory Design Pattern  
+
+    An interface is responsible for creating factory related objects without explicitly specifying the classes. Each generated factory can give the objects as per the factory patterns.
+
+    File = abstract_factory.py
