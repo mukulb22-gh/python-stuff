@@ -46,3 +46,10 @@
     It is used when we need to treat a group of objects in similar way as a single object.
 
     File = composite.py
+
+
+### o Filter Design Pattern  
+
+    In software is like having a set of rules to pick out specific objects from a larger collection based on the certain criteria.
+
+    File = filter.py
