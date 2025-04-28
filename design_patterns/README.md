@@ -75,3 +75,10 @@
     5) Remote Proxy: Represents an object that exists in a different address space (like on a server).
 
     File = proxy.py
+
+
+### o Flyweight Design Pattern 
+
+    The Flyweight pattern is a structural pattern focused on minimizing memory usage or computational expense by sharing as much common data as possible between multiple objects. Instead of each object storing all its data, objects share the common, immutable parts (called intrinsic state) and receive the unique, context-dependent parts (called extrinsic state) when needed.
+
+    File = flyweight.py
