@@ -62,3 +62,16 @@
     File = decorator.py
 
 
+### o Proxy Design Pattern 
+
+    In this pattern, a class represent functionality of another class. We create object having original object to interface its functionality to outer world.
+
+    USE CASE:
+
+    1) Access Control (Protection Proxy): Like in this example, the proxy can check if the client has the necessary permissions before allowing access to the real object's methods or data.
+    2) Lazy Initialization (Virtual Proxy): The proxy can delay the creation of an expensive real object until it's actually needed.
+    3) Logging (Logging Proxy): The proxy can log requests made to the real object.
+    4) Caching (Caching Proxy): The proxy can cache results from the real object to avoid repeated expensive operations.
+    5) Remote Proxy: Represents an object that exists in a different address space (like on a server).
+
+    File = proxy.py
