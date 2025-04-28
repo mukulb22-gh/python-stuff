@@ -53,3 +53,12 @@
     In software is like having a set of rules to pick out specific objects from a larger collection based on the certain criteria.
 
     File = filter.py
+
+
+### o Decorator Design Pattern 
+
+    The Decorator pattern allows you to attach new behaviors or responsibilities to objects dynamically without altering their original code.
+
+    File = decorator.py
+
+
