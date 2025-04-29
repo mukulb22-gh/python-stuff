@@ -92,3 +92,9 @@
 
     File = interpreter.py
 
+
+### o Iterator Design Pattern 
+
+    The Iterator pattern provides a standard way to access the elements of a collection (like a list, set, or custom collection) sequentially without exposing its underlying representation. It decouples the traversal logic from the collection itself.
+
+    File = iterator.py
