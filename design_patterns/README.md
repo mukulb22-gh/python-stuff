@@ -82,3 +82,13 @@
     The Flyweight pattern is a structural pattern focused on minimizing memory usage or computational expense by sharing as much common data as possible between multiple objects. Instead of each object storing all its data, objects share the common, immutable parts (called intrinsic state) and receive the unique, context-dependent parts (called extrinsic state) when needed.
 
     File = flyweight.py
+
+---
+# Behavioral Design Patterns :-
+
+### o Interpreter Design Pattern 
+
+    The Interpreter pattern is used to define a grammar for a simple language and provide an interpreter that can understand and act upon sentences written in that language. It essentially allows you to represent rules or operations as objects.
+
+    File = interpreter.py
+
